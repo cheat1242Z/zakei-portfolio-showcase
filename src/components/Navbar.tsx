@@ -1,8 +1,10 @@
-import { Home, User, Briefcase, Code, Folder, MessageCircle, Phone } from 'lucide-react';
+import { Home, User, Briefcase, Code, Folder, MessageCircle, Phone, Heart, MapPin } from 'lucide-react';
 
 const navItems = [
   { href: '#accueil', label: 'Accueil', icon: Home },
   { href: '#a-propos', label: 'À propos', icon: User },
+  { href: '#moi', label: 'Moi', icon: Heart },
+  { href: '#parcours', label: 'Parcours', icon: MapPin },
   { href: '#services', label: 'Services', icon: Briefcase },
   { href: '#competences', label: 'Compétences', icon: Code },
   { href: '#projets', label: 'Projets', icon: Folder },
