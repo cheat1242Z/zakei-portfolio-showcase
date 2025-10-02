@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -6,21 +5,8 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-20 px-6">
       <div className="container mx-auto max-w-4xl">
-        <motion.h2
-          className="text-4xl md:text-5xl font-bold text-primary text-center mb-16"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          Contact
-        </motion.h2>
-
-        <motion.div
-          className="bg-card rounded-2xl p-8 md:p-12 shadow-card ring-1 ring-border"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-        >
+        <h2 className="text-4xl md:text-5xl font-bold text-primary text-center mb-16">Contact</h2>
+        <div className="bg-card rounded-2xl p-8 md:p-12 shadow-card ring-1 ring-border">
           <div className="space-y-8">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -28,10 +14,7 @@ export const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-2">Email</h3>
-                <a
-                  href="mailto:contact@exemple.com"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <a href="mailto:contact@exemple.com" className="text-muted-foreground hover:text-primary transition-colors">
                   contact@exemple.com
                 </a>
               </div>
@@ -43,10 +26,7 @@ export const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-2">Téléphone</h3>
-                <a
-                  href="tel:+33123456789"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <a href="tel:+33123456789" className="text-muted-foreground hover:text-primary transition-colors">
                   +33 1 23 45 67 89
                 </a>
               </div>
@@ -83,7 +63,7 @@ export const Contact = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
